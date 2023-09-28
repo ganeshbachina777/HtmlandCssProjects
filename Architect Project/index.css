@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-section {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto Mono", monospace;
+  padding: 0.5rem 1.5rem;
+}
+
+.nav-section .left h1 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+.nav-section .left span {
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+.nav-section .right {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-section .right a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.nav-section .right a:hover {
+  background-color: rgb(235, 231, 231);
+}
+
+.main-section {
+  background-image: url("./images/architect.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.main-section h1 {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  margin-top: 100px;
+}
+
+.main-section h1 span#content {
+  font-weight: 400;
+  font-size: 2rem;
+  background-color: none;
+}
+.main-section h1 span#head {
+  background-color: rgb(8, 8, 8);
+  padding: 10px 20px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  opacity: 0.8;
+}
+
+.section {
+  margin-top: 4rem;
+}
+.section h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  margin-left: 2rem;
+}
+
+.section hr {
+  margin: 1rem 2rem;
+  opacity: 0.2;
+}
+.project-section .project-images {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.project-images .house {
+  position: relative;
+}
+
+.project-images .house img {
+  width: 100%;
+}
+
+.project-images h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: white;
+  font-weight: lighter;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+
+.about-section h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  margin-left: 2rem;
+}
+
+.about-section hr {
+  margin: 1rem 2rem;
+  opacity: 0.2;
+}
+
+.about-section p#description {
+  margin: 1rem 2rem;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-section .founders {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.about-section .founders .founder img {
+  width: 100%;
+}
+
+.founder h1 {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+.founder .role {
+  color: gray;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  margin: 1rem 0;
+}
+.founder .role-desc {
+  font-size: 1rem;
+  margin: 1rem 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.founder button {
+  width: 100%;
+  border: 0;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.founder button:hover {
+  background-color: rgb(217, 211, 211);
+  cursor: pointer;
+}
+
+.contact-section p {
+  font-family: 'Poppins', sans-serif;
+  margin: 1rem 2rem;
+}
+.contact-section form {
+  margin: 0 2rem;
+}
+.contact-section form input {
+  width: 100%;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.contact-section form button {
+  border: 0;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  padding: 6px 20px;
+  text-transform: uppercase;
+}
+
+.contact-section form button:hover {
+  background-color: rgb(231, 228, 228);
+  color: black;
+  cursor: pointer;
+}
+
+.contact-section .map {
+  margin: 0 2rem;
+  margin-top: 1.5rem;
+}
+.contact-section img {
+  width: 100%;
+}
+
+.footer-section {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-section span {
+  text-decoration: underline;
+}
+
+.footer-section span:hover {
+  color: green;
+  cursor: pointer;
+}
+@media only screen and (max-width: 580px) {
+  .nav-section .right {
+    display: none;
+  }
+
+  .main-section {
+    height: 30vh;
+    margin: 0;
+  }
+  .main-section h1 {
+    margin-top: 0;
+  }
+
+  .main-section h1 span#content {
+    display: none;
+  }
+
+  .project-section .project-images {
+    display: block;
+  }
+  .project-images .house {
+    margin: 1rem 0;
+  }
+
+  .about-section .founders {
+    display: block;
+  }
+
+  .about-section .founders .founder {
+    margin: 2rem 0;
+  }
+}
