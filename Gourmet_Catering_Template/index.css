@@ -1,0 +1,91 @@
+/* todo: initial styling to the all the elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* todo: header section styles */
+.header {
+    font-family: 'Cutive Mono', monospace;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(247, 247, 247);
+    color: black;
+    align-items: center;
+    height: 6vh;
+    letter-spacing: 2px;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 10px rgb(209, 193, 193);
+}
+
+/* todo: apply styles header section h3 element */
+.header h3 {
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+/* todo: apply styles to header section nav-bar */
+.header .nav-bar {
+    list-style: none;
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    margin-right: 10px;
+}
+
+/* todo: apply styles to link tag */
+.header .nav-bar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px;
+}
+
+/* todo: apply styles when hover on link tag */
+.header .nav-bar li a:hover {
+    background-color: rgb(214, 196, 196);
+}
+
+/* todo: apply styles to main section */
+.main {
+    width: 85%;
+    margin: auto;
+    height: 85vh;
+    background-image: url('./images/hamburger.jpg');
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+/* todo: apply style to main section h1 element */
+.main h1 {
+    color: rgb(11, 94, 48);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* TODO: Apply styles to mobile devices */
+@media only screen and (max-width: 600px) {
+    /* todo: when it reached mobile size then navbar will be remove */
+    .header .nav-bar {
+        display: none;
+    }
+
+    /* todo: apply styles to main section when mobile width reached */
+    .main {
+        height: 22vh;
+        width: 100%;
+    }
+    .main h1 {
+        left: 20px;
+    }
+    
+}
