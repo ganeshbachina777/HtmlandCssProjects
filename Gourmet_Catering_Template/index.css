@@ -20,6 +20,7 @@
     top: 0;
     left: 0;
     box-shadow: 1px 1px 10px rgb(209, 193, 193);
+    font-size: 1.1rem;
 }
 
 /* todo: apply styles header section h3 element */
@@ -87,5 +88,5 @@
     .main h1 {
         left: 20px;
     }
-    
+
 }
