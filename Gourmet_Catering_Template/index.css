@@ -123,6 +123,50 @@
     opacity: 0.5;
     font-size: 1.2rem;
 }
+
+hr {
+    width: 65%;
+    margin: auto;
+    opacity: 0.5;
+}
+
+/* todo: apply styles to menu section */
+
+.menu {
+    display: flex;
+    width: 60%;
+    margin: 5rem auto;
+    justify-content: space-between;
+}
+
+.menu .left h1 {
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+.menu .menu-items {
+    margin: 3rem 0;
+}
+
+.menu .menu-items p {
+    margin-top: 1.5rem;
+    opacity: 0.6;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 1.2px;
+}
+
+.menu .menu-items h3 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.menu .right img {
+    width: 100%;
+    border-radius: 5px;
+}
 /* TODO: Apply styles to mobile devices */
 @media only screen and (max-width: 600px) {
     /* todo: when it reached mobile size then navbar will be remove */
@@ -154,4 +198,16 @@
     .about p {
         margin: 0 20px;
     }
+
+    hr {
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+
 }
