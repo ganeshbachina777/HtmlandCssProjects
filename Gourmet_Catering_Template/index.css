@@ -167,6 +167,72 @@ hr {
     width: 100%;
     border-radius: 5px;
 }
+
+/* todo: apply styles to contact */
+.contact {
+    width: 60%;
+    margin: 6rem auto;
+}
+
+.contact h1 {
+    font-family: 'Hind', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.contact #small-info {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.contact h3 {
+    margin: 1.5rem 0;
+    opacity: 0.6;
+}
+
+.contact .form {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contact .form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(192, 178, 178);
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    padding: 20px 5px;
+}
+
+.contact .form input[type='button'] {
+    width: 150px;
+    border: none;
+    padding: 10px 0;
+    font-size: 1rem;
+    background-color: rgb(214, 207, 207);
+}
+
+.contact .form input[type='button']:hover {
+    cursor: pointer;
+    background-color: rgb(202, 190, 190);
+}
+
+/* todo: apply styles to footer section */
+
+.footer {
+    background-color: rgb(224, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    font-family: 'Fira Code', serif;
+    font-size: 0.9rem;
+}
+
+.footer span {
+    text-decoration: underline;
+}
+
 /* TODO: Apply styles to mobile devices */
 @media only screen and (max-width: 600px) {
     /* todo: when it reached mobile size then navbar will be remove */
@@ -209,5 +275,9 @@ hr {
         padding: 0 1rem;
     }
 
-
+    /* todo: contact section */
+    .contact {
+        width: 100%;
+        padding: 0 1rem;
+    }
 }
