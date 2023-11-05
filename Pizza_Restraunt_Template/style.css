@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('./images/pizza.jpg');
+    height: 90vh;
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+header .navbar {
+    background-color: rgb(146, 134, 134, 0.8);
+    display: flex;
+}
+
+header .navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.3rem;
+}
+
+header .navbar:hover {
+    background-color: black;
+}
+
+header .navbar a:hover {
+    background-color: rgb(230, 230, 230);
+    color: black;
+}
+
+header .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Caveat', cursive;
+}
+
+header .main-content h1 {
+    font-size: 3.8rem;
+    margin: 0.8rem 0;
+}
+
+header .main-content a {
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: 10px;
+    text-decoration: none;
+}
+
+header .main-content a:hover {
+    background-color: rgb(219, 207, 207);
+    color: black;
+    cursor: pointer;
+}
+
+header .time {
+    background-color: black;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 0.5rem;
+    margin: 1rem;
+    width: fit-content;
+    padding: 5px;
+}
+
+.menu {
+    background-color: black;
+    padding-bottom: 5rem;
+}
+
+.section h1#title {
+    color: white;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    padding: 5rem 0;
+}
+
+.menu .menus {
+    width: 60%;
+    margin: auto;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu .menus .menu-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.menu .menus .menu-head a {
+    padding: 2rem 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.3rem;
+}
+
+.menu .menus .menu-head a:hover {
+    background-color: orangered;
+}
+.menu .menus .menu-head a.active {
+    background-color: orangered;
+}
+
+.menu .menus .menus-list {
+    background-color: white;
+    padding: 0 1rem;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+}
+
+.items .item {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 1.4rem;
+}
+
+.items .item .title-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.items .item .title-price p {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.items .item .description p {
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.hide {
+    display: none;
+}
+
+.about {
+    background-color: rgb(136, 92, 38);
+    padding-bottom: 5rem;
+}
+
+.about .container {
+    width: 50%;
+    margin: auto;
+    font-size: 1.4rem;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+}
+
+.about .chef-image img {
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.about .chef-desc span {
+    font-weight: bold;
+}
+
+.about .chef-desc p {
+    margin: 1rem 0;
+}
+.about .chef-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.about img#restraunt {
+    width: 100%;
+    margin-top: 1rem;
+}
+.timings .shedule {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 120px;
+    margin-top: 2rem;
+}
+
+.map-image img {
+    width: 100%;
+}
+
+.contact {
+    background-color: rgb(155, 154, 154);
+    padding-bottom: 5rem;
+}
+
+.contact .main-info-contact {
+    width: 50%;
+    margin: auto;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main-info-contact p#black span {
+    background-color: black;
+    padding: 5px;
+}
+
+.main-info-contact p#white {
+    font-size: 2rem;
+}
+.main-info-contact p#white span {
+    font-weight: bold;
+}
+
+.contact .form {
+    width: 50%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    
+}
+
+.contact .form * {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.2rem;
+}
+
+.contact .form input[type=submit] {
+    padding: 10px;
+}
+.contact .form input[type=submit]:hover {
+    cursor: pointer;
+    background-color: rgb(199, 196, 196);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.footer span {
+    color: yellow;
+}
+/* todo: Responsive for mobile devices */
+@media only screen and (max-width: 500px) {
+    header .content .navbar {
+        display: none;
+    }
+    header .content .main-content {
+        margin-top: 20vh;
+    }
+
+    .menu .menus {
+        width: 90%;
+    }
+
+    .about .container {
+        width: 90%;
+    }
+    .about .chef-image img {
+        width: 130px;
+    }
+
+    .contact .main-info-contact{
+        width: 90%;
+    }
+
+    .contact .form {
+        width: 90%;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
+}
