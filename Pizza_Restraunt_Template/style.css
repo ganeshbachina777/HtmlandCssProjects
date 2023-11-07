@@ -279,6 +279,24 @@ header .time {
 .footer span {
     color: yellow;
 }
+
+/* todo: Responsive for tablet devices */
+@media only screen and (max-width: 1300px) {
+    .menu .menus {
+        width: 80%;
+    }
+    .about .container {
+        width: 80%;
+    }
+
+    .contact .main-info-contact{
+        width: 80%;
+    }
+
+    .contact .form {
+        width: 80%;
+    }
+}
 /* todo: Responsive for mobile devices */
 @media only screen and (max-width: 500px) {
     header .content .navbar {
@@ -311,3 +329,4 @@ header .time {
         font-size: 1rem;
     }
 }
+

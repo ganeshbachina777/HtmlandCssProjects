@@ -25,7 +25,7 @@ saladTitleElement.addEventListener('click', function() {
     pizzaList.classList.add('hide');
     stratersList.classList.add('hide');
     saladsList.classList.remove('hide');
-})
+});
 
 starterTitleElement.addEventListener('click', function() {
     pizzaTitleElement.classList.remove('active');
@@ -34,4 +34,20 @@ starterTitleElement.addEventListener('click', function() {
     pizzaList.classList.add('hide');
     saladsList.classList.add('hide');
     saladsList.classList.remove('hide');
+});
+
+// get the form elements
+let formSubmitMessage = document.querySelector('#submit');
+let customerName = document.querySelector('#name');
+let noOfPeople = document.querySelector('#count');
+let date = document.querySelector('#date');
+let message = document.querySelector('#message');
+
+formSubmitMessage.addEventListener('click', function() {
+    alert(`Hi ${customerName.value}, you have successfully booked a table for ${noOfPeople.value} members!`);
+    customerName.value = '';
+    noOfPeople.value = '';
+    date.value = '';
+    message.value = '';
 })
+
